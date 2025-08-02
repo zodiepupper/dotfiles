@@ -1,0 +1,17 @@
+color=#000000
+inside-color=#000000
+inside-ver-color=#000000
+text-ver-color=#ffffff
+key-hl-color=#9944ff
+ring-ver-color=#9977ff
+inside-wrong-color=#000000
+ring-wrong-color=#ff0000
+layout-bg-color=#ffffff
+inside-clear-color=#9977ff
+ring-clear-color=#8877ee
+line-color=#000000
+line-ver-color=#9944ff
+ring-color=#000000
+indicator-thickness=100
+indicator-radius=200
+
