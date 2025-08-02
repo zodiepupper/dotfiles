@@ -606,3 +606,8 @@ binds {
     // moving the mouse or pressing any other key.
     Mod+Shift+P hotkey-overlay-title="power off monitors" { power-off-monitors; }
 }
+// xwayland minimal setup
+spawn-at-startup "xwayland-satellite"
+environment {
+  DISPLAY ":0"
+}
