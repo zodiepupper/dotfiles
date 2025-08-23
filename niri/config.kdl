@@ -55,6 +55,10 @@ input {
         // middle-emulation
     }
 
+    touch {
+      map-to-output "DSI-1"
+    }
+
     // Uncomment this to make the mouse warp to the center of newly focused windows.
     // warp-mouse-to-focus
 
@@ -340,7 +344,7 @@ window-rule {
     clip-to-geometry true
 }
 
-window-rule {
+/-window-rule {
     match is-floating=true
     baba-is-float true
 }
@@ -369,9 +373,8 @@ binds {
     Mod+T hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
     Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
-    Mod+G hotkey-overlay-title="open godot" {spawn "~/Documents/dev/niri/godot"; }
-    Mod+B hotkey-overlay-title="open zen browser" {spawn "bash" "-c" "flatpak run app.zen_browser.zen"; } // this isn't working i don't know how to run commands lol
-
+    // Mod+Shift+G hotkey-overlay-title="open installed version of godot godot" {spawn "godot"; }
+    Mod+B hotkey-overlay-title="open zen browser" {spawn "bash" "-c" "flatpak run app.zen_browser.zen"; }
     // You can also use a shell. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument in the end.
     // Mod+T { spawn "bash" "-c" "notify-send hello && exec alacritty"; }
@@ -611,3 +614,7 @@ spawn-at-startup "xwayland-satellite"
 environment {
   DISPLAY ":0"
 }
+// start ibus so we can emoji uwu 🐶🦴
+// spawn-at-startup { spawn "bash" "-c" "niri"; } 
+// this is brokey rn, need to learn more about ibus and niri
+// spawn-at-startup  "bash" "-c" "ibus start"; 
