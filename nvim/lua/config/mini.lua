@@ -10,10 +10,10 @@ return
                 require("mini.pairs").setup()
                 require("mini.tabline").setup()
                 vim.keymap.set('n', '<Leader>-', function() MiniFiles.open() end, opts)
-                require("mini.base16").setup({
+--[[                base16 = require("mini.base16").setup({
                         palette = {
                                 base00 = '#100020',
-                                base01 = '#100020',
+                                base01 = '#1000f0',
                                 base02 = '#202040',
                                 base03 = '#8691a7',
                                 base04 = '#ffffff',
@@ -35,5 +35,6 @@ return
                                 ['echasnovski/mini.nvim'] = true,
                         },
                 })
+--]]
         end
 }
