@@ -6,7 +6,9 @@ vim.g.colors_name = nil
 -- Highlight groups
 local hi = vim.api.nvim_set_hl
 
-hi(0, "@keyword.return", { ctermfg = 217, fg = "#ffaabb" })
+local light_red = "#ffaabb"
+
+hi(0, "@keyword.return", { ctermfg = 217, fg = light_red})
 hi(0, "@lsp.mod.deprecated", { ctermfg = 217, fg = "#ffaabb" })
 hi(0, "@lsp.type.variable", { ctermfg = 210, fg = "#ff7799" })
 hi(0, "@markup.heading.1", { link = "markdownH1" })

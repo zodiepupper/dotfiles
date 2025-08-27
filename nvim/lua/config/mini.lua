@@ -9,6 +9,7 @@ return
                 require("mini.completion").setup()
                 require("mini.pairs").setup()
                 require("mini.tabline").setup()
+                require("mini.files").setup()
                 vim.keymap.set('n', '<Leader>-', function() MiniFiles.open() end, opts)
 --[[                base16 = require("mini.base16").setup({
                         palette = {
